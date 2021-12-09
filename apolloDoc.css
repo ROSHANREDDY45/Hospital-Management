@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            /* list-style: none; */
+            font-family: 'PT Sans', sans-serif;
+            scroll-behavior: smooth;
+            
+            
+        }
+        body{
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background-color: white;
+            
+
+            
+            
+        }
+      
+        .header{
+            /* display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+            */
+            background-color: white;
+            position: sticky;
+            top: 0px;
+            z-index: 9;
+
+        }
+        /* images */
+        .brandIcon{
+            height: 80px;
+            width: 80px;
+            margin-left: 200px;
+        }
+        .hospitalBanner{
+            width: 100%;
+            height: 25vh;
+            object-fit: cover;
+        }
+        .docImg{
+            border-radius: 5px;
+            width: 100px;
+            height: 100px;
+        }
+        .brandIconFooter{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: 50%;
+            top: 30px;
+        }
+        .navBar{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 25px;
+            margin-right: 60px;
+        }
+        .navMenu{
+            display: flex;
+            flex-flow: row wrap;
+            list-style: none;
+
+        }
+        .navList a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            padding: 10px;
+            
+        }
+        .heading{
+            left: 40vw;
+            top: 20vh;
+            margin-top: 2rem;
+            position: absolute;
+            z-index: 1;
+        }
+        .container{
+            
+            /* font-size: 30px; */
+            display: flex;
+            flex-flow: wrap column;
+            /* border: 1px solid black; */
+            
+
+        }
+        .subContainer{
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 10px;
+            /* border: 1px solid black; */
+            background-color: honeydew;
+            width: 60vw;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+
+
+
+        }
+        .docInfo{
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: 20px;
+            font-size: 20px;
+
+
+        }
+        .docInfo b{
+            color: #0590d8;
+            cursor: pointer;
+        }
+        .docInfo b:hover{
+            text-decoration: underline;
+
+        }
+        .apm1{
+            text-align: center;
+            margin-left: 5rem;
+        }
+        .apm2{
+            text-align: center;
+            margin-left: 5rem;
+
+        }
+        .apm3{
+            text-align: center;
+            margin-left: 21rem;
+
+        }
+        .apmBtn{
+            position: relative;
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            background-color: rgb(48, 106, 212);
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .apmBtn a{
+            text-decoration: none;
+            color: black;
+        }
+        .apmBtn:hover{
+            background-color: #0590d8 ;
+        }
+        footer{
+            border-top: 2px solid black;
+            margin-top: 20px;
+            background-image: linear-gradient(135deg, #868f96 10%, #596164 100%);
+            width: 100%;  
+            height: 200px;  
+            overflow: hidden;  
+        
+        }
+        footer b{
+            position: relative;
+            top: 50px;
+            left: 90px;
+        }
+       
+        .socialMedia{
+            position: relative;
+            display: flex;
+            flex-flow: wrap column;
+            align-content: flex-end;
+             margin-right: 100px;
+            top: -100px;
+
+        }
+        .mediaLogos{
+            width: 50px;
+            height: 40px;
+        }
+        .mediaNames{
+            position: relative;
+            top: -205px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            font-size: 20px;
+
+
+
+        }
+        .mediaNames a{
+            text-decoration: none;
+            color: black;
+        }
+        .mediaNames b{
+            padding-bottom: 15px;
+        }
+        .hospitalList{
+            position: absolute;
+            top: 50vh;
+            right: 7rem;
+            margin-left: 10rem;
+            font-size: 20px;
+            background-image: linear-gradient(135deg, #868f96 10%, #596164 100%);
+            cursor: pointer;
+            /* padding: 10px; */
+            border-radius: 10px;
+            overflow: hidden;
+            list-style: none;
+
+
+
+        }
+        .listItem{
+            padding: 10px;
+            text-align: center;
+        }
+        .listItem a{
+            text-decoration: none;
+            color: black;
+        }
+        .listItem:hover{
+            background-color: #0590d8;
+        }

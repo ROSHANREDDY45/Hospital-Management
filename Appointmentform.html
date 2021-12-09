@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="FavIcon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="FavIcon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="FavIcon/favicon-16x16.png">
+<link rel="manifest" href="FavIcon/site.webmanifest">
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="header ">
+        
+        <nav class="navBar">
+            <a href="Home.html"><img class="brandIcon" src="logos/hospitallogo.png" alt=""></a> 
+         
+    
+    
+            <ul class="navMenu">
+                <li class="navList"><a href="Home.html"><b>Home</b> </a> </li>
+                <li class="navList"><a href="blog.html"><b>Blog</b> </a></li>
+                <li class="navList"><a href="#"><b>About Us</b> </a> </li>
+                <li class="navList"><a href="#"><b>Contact Us</b> </a></li>
+    
+            </ul>
+        </nav>
+        <hr>
+        </div>
+        <div class="container">
+    <h1 class="main_heading">APPOINTMENT FORM</h1>
+    <p> PLEASE FILL THE FORM TO GET OUR MEDICAL SERVICES </p>
+    <div class="form">
+        <form action="javascript:sendmail()" method="post" id="form">
+        <p>
+            
+        Name : <input type="text" name="name" id="name" required placeholder="enter your name"
+        ><br></p>
+        <p>
+                
+        Gender : Male <input type="radio" name="gender" id="gender" value="Male" required 
+        style="cursor: pointer;">
+        Female <input type="radio" name="gender" id="gender" value="Female" required
+        style="cursor: pointer;">
+        </p>
+        <p>
+        Age : <input type="text" name="age" id="age" required placeholder="enter your age" maxlength="2" class="age">
+        Height(cm) : <input  type="text" name="height" id="height" required class="measurements">
+        Weight(kg) : <input type="text" name="weight" id="weight" required class="measurements">
+        Blood Group *:<select class="bGroup" style="cursor: pointer;" id="bloodGroup">
+            <option disabled value="#">--Select Your Blood Group--</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+        </p>
+        <p>
+         Describe Medical condition (optional) :<br>
+        <textarea name="condition" id="condition" cols="61" rows="7" >
+        </textarea>
+        </p>
+        <p>
+        Appointment : <input type="datetime-local" name="appointment" id="appointment" style="cursor: pointer; border: none; outline: none;">
+        </p>
+        <p>
+            Address :<br>
+            <textarea name="address" id="address" cols="61" rows="7" >
+            </textarea>
+        </p>
+        <p>
+            Email : <input type="email" name="emailaddress" id="emailaddress" required placeholder="@gmail.com" class="email"> 
+            <!-- <span id="useEmail">useEmail</span> -->
+        </p>
+        <p>
+            Phone No : +91 <input type="text" name="phoneno" id="phoneno" required placeholder="1234567890"  maxlength="10" class="phoneno">
+        </p>
+        <p>
+            Pincode : <input type="text" name="pincode" id="pincode" required placeholder="123456" maxlength="6"  class="pincode">
+        </p>
+        
+        <input type="submit" value="Submit">
+        <input id="resetButton" type="reset" value="Reset">
+    
+    </form>
+
+    </div>
+    </div>
+    <script>
+         const resetButton=document.getElementById('resetButton')
+
+
+         resetButton.addEventListener("click", function() {
+            window.scrollTo(0,0);
+        })
+    //    const form = document.querySelector('#form')
+    //     const useEmail = document.querySelector('#useEmail')
+
+
+        // useEmail.addEventListener('click',()=>{
+        //     let x = document.forms[0].elements[11].value
+        //     console.log(x)
+        //     // form.setAttribute('action',`<form action="https://formsubmit.co/${x}" method="post">`) 
+        //         form.action = `<form action="https://formsubmit.co/${x}" method="post">`
+        //         console.log(`<form action="https://formsubmit.co/${x}" method="post">`)
+        // })
+     
+
+function sendmail(){
+
+var name = $('#name').val();
+var gender = $('#gender').val();
+var age = $('#age').val();
+var height = $('#height').val();
+var weight = $('#weight').val();
+var bloodGroup = $('#bloodGroup').val();
+var condition = $('#condition').val();
+var appointment = $('#appointment').val();
+var address = $('#address').val();
+var email = $('#emailaddress').val();
+var phoneno = $('#phoneno').val();
+var pincode = $('#pincode').val();
+
+
+var phoneno = $('#phoneno').val();
+// var body = $('#body').val();
+
+var Body='Name: '+name+'<br>gender: '+gender+'<br>age: '+age+'<br>height: '+height+'<br>weight: '+weight+'<br>bloodGroup: '+bloodGroup+'<br>condition: '+condition+'<br>appointment: '+appointment+'<br>address: '+address+'<br>email: '+email+'<br>phoneno: '+phoneno+'<br>pincode: '+pincode;
+//console.log(name, phone, email, message);
+
+var _0x92b2=["\x4F\x4B","\x59\x6F\x75\x72\x20\x6D\x61\x69\x6C\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x73\x65\x6E\x64\x2E\x20\x54\x68\x61\x6E\x6B\x20\x79\x6F\x75\x20\x66\x6F\x72\x20\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x2E","\x65\x72\x72\x6F\x72","\x54\x68\x65\x72\x65\x20\x69\x73\x20\x65\x72\x72\x6F\x72\x20\x61\x74\x20\x73\x65\x6E\x64\x69\x6E\x67\x20\x6D\x65\x73\x73\x61\x67\x65\x2E\x20","\x74\x68\x65\x6E","\x73\x6D\x74\x70\x2E\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D","\x73\x75\x6B\x69\x62\x68\x61\x76\x61\x48\x53\x4D\x40\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D","\x73\x75\x6B\x69\x62\x68\x61\x76\x61\x68\x73\x6D\x37","\x54\x68\x65\x20\x41\x70\x70\x6F\x69\x6E\x74\x6D\x65\x6E\x74\x20\x69\x73\x20\x63\x6F\x6E\x66\x69\x72\x6D\x65\x64\x20\x66\x6F\x72\x20","\x73\x65\x6E\x64"];Email[_0x92b2[9]]({Host:_0x92b2[5],Username:_0x92b2[6],Password:_0x92b2[7],To:email,From:_0x92b2[6],Subject:_0x92b2[8]+ name,Body:Body})[_0x92b2[4]]((_0x97c5x1)=>{if(_0x97c5x1== _0x92b2[0]){alert(_0x92b2[1])}else {console[_0x92b2[2]](_0x97c5x1);alert(_0x92b2[3])}})
+}
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

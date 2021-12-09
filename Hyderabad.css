@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+    *{
+            margin: 0;
+            padding: 0;
+            font-family: 'PT Sans', sans-serif;
+            /* list-style: none; */
+            scroll-behavior: smooth;
+        
+        }
+        
+        body{
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background-color: white;
+
+            
+        }
+        .header{
+            /* display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+            */
+            background-image: linear-gradient(135deg, #09203f 10%, #537895 100%);
+            
+            position: sticky;
+            top: 0px;
+            z-index: 9;
+
+        }
+        /* images */
+        .brandIcon{
+            height: 80px;
+            width: 80px;
+            margin-left: 200px;
+
+        }
+        .hospitalBanner{
+            width: 100%;
+            height: 25vh;
+            object-fit: cover;
+        }
+        .apolloImg{
+            width: 50vw;
+            object-fit: cover;
+
+        }
+        .kimsImg{
+            width: 50vw;
+            height: 40vh;
+            object-fit: cover;
+        }
+        .yashodhaImg{
+            width: 50vw;
+            height: 40vh;
+        
+        }
+        .careImg{
+            width: 50vw;
+            height: 40vh;
+        }
+        .brandIconFooter{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: 50%;
+            top: 30px;
+        }
+        .navBar{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            margin-top: 25px;
+            margin-right: 60px;
+        }
+        .navMenu{
+            display: flex;
+            flex-flow: row wrap;
+            list-style: none;
+            align-content: center;
+
+
+        }
+        .navList a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            padding: 10px;
+            
+        }
+        .heading{
+            left: 40vw;
+            top: 20vh;
+            margin-top: 2rem;
+            position: absolute;
+            z-index: 1;
+
+
+            
+            
+        }
+        .container{
+            margin: 10px;
+            padding: 10px;
+            /* font-size: 30px; */
+            display: flex;
+            flex-flow: wrap row;
+            height: 2000px;
+            /* border: 1px solid black; */
+            
+
+        }
+        .subContainer1{
+            position: sticky;
+            top: 0;
+            width: 25vw;
+            height: 40vh;
+            display: flex;
+            flex-flow: column wrap;
+            /* border: 1px solid black; */
+        }
+        .hospitalList{
+            position: absolute;
+            top: 15vh;
+            left: -9rem;
+            margin-left: 10rem;
+            font-size: 20px;
+            background-image: linear-gradient(135deg, #868f96 10%, #596164 100%);
+            cursor: pointer;
+            /* padding: 10px; */
+            border-radius: 10px;
+            overflow: hidden;
+            list-style: none;
+
+
+        }
+        .listItem{
+            padding: 10px;
+        }
+        .listItem:hover{
+            background-color: #0590d8;
+        }
+        
+        .Btn{
+            float: right;
+            margin-left: 1rem;
+        }
+        .BtnClock{
+            transition: transform 0.2s ease;
+            transform: rotate(90deg);
+        }
+        .BtnAnti{
+            transition: transform 0.2s ease;
+            transform: rotate(-90deg);
+
+        }
+        
+        /* containers */
+        .subContainer2{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            left: 30px;
+            /* border: 1px solid black; */
+            width: 65vw;
+        }
+        .subContainer3{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            left: 30px;
+            /* border: 1px solid black; */
+            width: 65vw;
+        }
+        .subContainer4{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            left: 30px;
+            /* border: 1px solid black; */
+            width: 65vw;
+        }
+        .subContainer5{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            left: 30px;
+            /* border: 1px solid black; */
+            width: 65vw;
+        }
+        .subContainer{
+            display: none;
+        }
+        
+        .subHeading{
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            margin-left: 1rem;
+
+        }
+        .para{
+            padding: 10px;
+            font-size: 20px;
+            
+        }
+        .specList{
+            position: relative;
+            left: 20px;
+            color:#0590d8 ;
+        
+        }
+        .specItem:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .address{
+            margin-left: 20px;
+        }
+        .apmBtn{
+            position: relative;
+            margin-top: 20px;
+            border: none;
+            outline: none;
+            background-color: rgb(48, 106, 212);
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            left: 6vw;
+            font-weight: bold;
+        }
+        .apmBtn a{
+            text-decoration: none;
+            color: black;
+        }
+        .apmBtn:hover .apm{
+            color: white;
+        }
+        .apmBtn:hover{
+            background-color: #0590d8 ;
+
+        }
+
+       .mail{
+           color:rgb(48, 106, 212);
+       }
+       footer{
+            border-top: 2px solid black;
+            margin-top: 20px;
+            background-image: linear-gradient(135deg, #868f96 10%, #596164 100%);
+            width: 100%;  
+            height: 200px;  
+            overflow: hidden;  
+        
+        }
+        footer b{
+            position: relative;
+            top: 50px;
+            left: 90px;
+        }
+       
+        .socialMedia{
+            position: relative;
+            display: flex;
+            flex-flow: wrap column;
+            align-content: flex-end;
+             margin-right: 100px;
+            top: -100px;
+
+        }
+        .mediaLogos{
+            width: 50px;
+            height: 40px;
+        }
+        .mediaNames{
+            position: relative;
+            top: -205px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-evenly;
+            font-size: 20px;
+
+
+
+        }
+        .mediaNames a{
+            text-decoration: none;
+            color: black;
+        }
+        .mediaNames b{
+            padding-bottom: 15px;
+        }
+        .alert{
+
+               position: fixed;
+               background-color: #0590d8;
+               padding: 10px;
+               font-size: larger;
+               border-radius: 20px;
+               right: 1rem;
+               top: 20vh;
+               opacity: 0;
+
+    }
+        .alertPop{
+             transition: opacity 0.1s ease-in;
+             opacity: 1;
+        }
+        .alertOut{
+            transition: opacity 0.1s ease-out;
+            opacity: 0;
+
+        }
+
+
+        .buttons{
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-around;
+            align-content: center;
+        }
+        .ok,.cancel{
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
